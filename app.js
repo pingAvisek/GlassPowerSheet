@@ -23,9 +23,3 @@ window.onload = () => {
   let dateAppo = document.getElementById("date");
   dateAppo.setAttribute("value", today);
 };
-
-const print = document.getElementById("print");
-
-// print.addEventListener("click", () => {
-//   window.print();
-// });
