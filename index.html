@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glass Power Sheet</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fevicon Icon -->
+    <link
+        href="data:image/x-icon;base64,AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAADD5+sAAAAAAD1OTwAA6v8AExQUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQRERERERERFBEREREREREUERERERERERQTMRERERMxFDADMRETMAMzAAAxERMAADMAADMRMwAAMwAAMjMjAAAzAAAxIhMAADMwAzEREzADMRMxEREREzERERERERERERERERERERERERERERERERERERERERERERERERERERERF//wAAf/8AAH//AABP8wAAA8AAAAPAAAABgAAAAAAAAAJAAAADwAAAz/MAAP//AAD//wAA//8AAP//AAD//wAA"
+        rel="icon" type="image/x-icon" />
+
+    <!-- JavaScript File Link  -->
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Main Banner  -->
+        <div class="main-banner">
+            <div class="rows">
+                <img src="./img/logo-main.png" alt="logo-main">
+            </div>
+            <div class="rows">
+                <h2>
+                    Lions Eye Hospital
+                </h2>
+                <p>
+                    Lions club of kathmandu
+                </p>
+                <p>
+                    Minbhawan, kathmandu
+                </p>
+                <p>
+                    Tel.:
+                    <a href="tel:01-4622211">01-4622211</a>
+                </p>
+            </div>
+            <div class="rows">
+                <img src="./img/lions-eye-hospital.png" alt="lions-eye-hospital">
+            </div>
+        </div>
+
+        <form>
+            <div class="right" style="display: flex; justify-content: right;">
+                <div class="date-right">
+                    <label for="date">Date: <input type="date" id="date" class="dateAppo"></label>
+                </div>
+            </div>
+
+            <div class="user-data">
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name" autofocus style="width: 80%;"> <br> <br>
+                <div class="space-between" style="display: flex; justify-content: space-between">
+                    <div>
+                        <label for="age">Age: </label>
+                        <input type="number" name="age" id="age" min="1" max="125">
+
+                    </div>
+                    <div>
+                        <label for="sex">Sex: </label>
+                        <input list="gender" name="sex" id="sex">
+                        <datalist id="gender">
+                            <option value="Male">
+                            <option value="Female">
+                            <option value="Other">
+                        </datalist>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- Table -->
+
+
+
+        </form>
+    </div>
+</body>
+
+</html>
