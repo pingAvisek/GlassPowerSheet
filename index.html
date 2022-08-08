@@ -49,22 +49,22 @@
         <form>
             <div class="right" style="display: flex; justify-content: right;">
                 <div class="date-right">
-                    <label for="date">Date: <input type="date" id="date" class="dateAppo"></label>
+                    <label for="date">Date: <input type="date" id="date" class="dateAppo" required></label>
                 </div>
             </div>
 
             <div class="user-data">
                 <label for="name">Name: </label>
-                <input type="text" name="name" id="name" autofocus style="width: 80%;"> <br> <br>
+                <input type="text" name="name" id="name" autofocus style="width: 80%;" required> <br> <br>
                 <div class="space-between" style="display: flex; justify-content: space-between">
                     <div>
                         <label for="age">Age: </label>
-                        <input type="number" name="age" id="age" min="1" max="125">
+                        <input type="number" name="age" id="age" min="1" max="125" style="width: 60px;">
 
                     </div>
                     <div>
                         <label for="sex">Sex: </label>
-                        <input list="gender" name="sex" id="sex">
+                        <input list="gender" name="sex" id="sex" required>
                         <datalist id="gender">
                             <option value="Male">
                             <option value="Female">
@@ -73,13 +73,59 @@
                     </div>
                 </div>
             </div>
-            <br>
-            <!-- Table -->
-
-
-
         </form>
+
+        <br>
+        <!-- Table -->
+        <table border="1">
+            <thead>
+                <tr>
+                    <td>Eye</td>
+                    <td>DSPH</td>
+                    <td>DCYL</td>
+                    <td>AXIS</td>
+                    <td>VISION</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>OD</td> <!-- Right Eye -->
+                    <td><input type="number" name="" id="" max="100" value="od-dsph" required></td>
+                    <td><input type="number" name="" id="" max="100" value="od-dcyl" required></td>
+                    <td><input type="number" name="" id="" max="100" value="od-axis" required></td>
+                    <td><input type="number" name="" id="" max="100" value="od-vision" required></td>
+
+                </tr>
+
+                <tr>
+                    <td>OS</td> <!-- Left Eye -->
+                    <td><input type="number" name="" id="" max="100" value="os-dsph" required></td>
+                    <td><input type="number" name="" id="" max="100" value="os-dcyl" required></td>
+                    <td><input type="number" name="" id="" max="100" value="os-axis" required></td>
+                    <td><input type="number" name="" id="" max="100" value="os-vision" required></td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <p>
+            Near Add
+        </p>
+        <p>
+            IPD
+        </p>
+
+        <div class="space-between" style="display: flex; justify-content: space-between">
+            <div>
+                <p>Remarks:</p>
+            </div>
+            <div>
+                Opthalmologist / Optometrist
+            </div>
+        </div>
     </div>
+
+    <button id="print">Print</button>
 </body>
 
 </html>
